@@ -10,28 +10,32 @@
 <body> 
 
 <div data-role="page" id="page">
-	<div data-role="header" data-theme="c">
+	<div data-role="header" data-theme="a">
 		<h1>Page One</h1>
 	</div>
     
     
 	<div data-role="content" data-theme="a">	
-		<ul data-role="listview" data-theme="d">
+		<ul data-role="listview" data-split-theme="d" data-theme="d">
 			<li><a href="#page2">Page Two</a></li>
 
 		</ul>
 		<div data-role="fieldcontain" >
-		  <label for="slider">Value:</label>
-		  <input type="range" name="slider" id="slider" value="0" min="0" max="100" />
+		  
+		  <input name="slider" type="range" id="slider" max="100" min="0" value="0" data-theme="a" />
 	  </div>
+      <form class="full-width-slider">
+    <label for="slider-12" class="ui-hidden-accessible">Slider:</label>
+    <input type="range" name="slider-12" id="slider-12" min="0" max="100" value="50">
+</form>
 
       	
       
 		
 		<div data-role="controlgroup" data-type="horizontal">
-		  <button data-icon="arrow-l" data-iconpos="notext">Button</button>
-		  <button data-icon="star" data-iconpos="notext">Button</button>
-		  <button data-icon="arrow-r" data-iconpos="notext">Button</button>
+		  <button data-theme="a">voltar</button>
+		  <button data-theme="a">play</button>
+		  <button data-theme="a">avançar</button>
 	  </div>
 		   
 
@@ -42,7 +46,7 @@
     
     
     
-	<div data-role="footer" data-theme="c">
+	<div data-role="footer" data-theme="a">
 		<h4>Page Footer</h4>
 	</div>
 </div>
