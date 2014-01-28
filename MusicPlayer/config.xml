@@ -17,8 +17,7 @@
         Hardeep Shoker 
     </author>
 	
-	<gap:platform name="ios" />
-	<gap:platform name="android" />
+	<preference name="Fullscreen" value="false" />
 
 
 </widget>
